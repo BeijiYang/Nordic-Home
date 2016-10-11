@@ -1,0 +1,11 @@
+<view class="container">
+    <swiper autoplay="{{autoplay}}" indicator-dots="{{indicatorDots}}" class="swiper">
+        <block wx:for="{{items}}">
+            <swiper-item>
+                <image src="{{item.imgUrls}}" class="img" mode="aspectFill"></image>
+                <view class="name">{{introduction}}</view>
+                <button class="btn" type="primary" size="{{primarySize}}" bindtap="log" > {{btnText}} </button>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
