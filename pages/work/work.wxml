@@ -4,7 +4,13 @@
             <swiper-item>
                 <image src="{{item.imgUrls}}" class="img" mode="aspectFill"></image>
                 <view class="name">{{introduction}}</view>
-                <button class="btn" type="primary" size="{{primarySize}}" bindtap="log" > {{btnText}} </button>
+                <view class="body-view">
+                    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+                        预约成功
+                    </toast>
+                    <button class="btn" type="primary" size="{{primarySize}}" bindtap="toast1Tap" > {{btnText}} </button>
+                    <!--<button type="default" bindtap="toast1Tap">点击弹出默认toast</button>-->
+                 </view>
             </swiper-item>
         </block>
     </swiper>
