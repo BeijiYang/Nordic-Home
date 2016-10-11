@@ -11,6 +11,7 @@
     "navigationBarTextStyle":"black"
   },
    "tabBar": {
+    "selectedColor": "#00647d",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页"
