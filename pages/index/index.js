@@ -74,17 +74,29 @@ getLocation: function() {
     wx.getLocation({
       //定位类型 wgs84, gcj02
       type: 'gcj02',
-      success: function(res) {
+
+     success: function(res) {
+    var latitude = res.latitude
+    var longitude = res.longitude
+    console.log(res)
+    wx.chooseLocation({
+      latitude: latitude,
+      longitude: longitude,
+      scale: 28,
+
+      success: function(res){
         console.log(res)
-        wx.openLocation({
-          //当前经纬度
-          latitude: res.latutude,
-          longitude: res.longitude,
-           scale: 28,
-        })       
-  
       }
     })
+  }
+    })
+    // wx.chooseLocation({
+    //     success: function(res) {
+    // var latitude = res.latitude
+    // var longitude = res.longitude
+    // console.log(res)
+    //     }
+    // })
   }
 
 })
