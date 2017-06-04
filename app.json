@@ -18,6 +18,10 @@
     }, {
       "pagePath": "pages/work/work",
       "text": "预约"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "个人"
     }]
   }
 }

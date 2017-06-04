@@ -1,3 +1,5 @@
 {
-    "navigationBarTitleText": "查看启动日志"
+  "navigationBarBackgroundColor": "#91b6c3",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "个人中心"
 }
